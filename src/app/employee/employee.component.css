@@ -1,0 +1,40 @@
+h2{
+     margin-left: 40%;
+     padding: 10px;
+     
+}
+#employees{
+  margin-top: 5%;
+  border-collapse: collapse;
+  width: 100%;
+
+}
+#employees thead th{
+  text-align: center;
+}
+#employees td, #employees th{
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+#employees tr:nth-child(even){background-color: #f2f2f2;}
+
+#employees tr:hover {background-color: #ddd;}
+
+#employees th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #420946;
+  color: white;
+}
+button{
+  margin-top: 50px;
+  width: 10%;
+  background-color: #420946;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  font-weight: bold;
+  cursor: pointer;
+}

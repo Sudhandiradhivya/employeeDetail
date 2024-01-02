@@ -1,0 +1,31 @@
+<div class="container" setBackground >
+  <h2>Employee Details</h2>
+<table id="employees">
+  <thead>
+    <th>EmpId</th>
+    <th>EmpName</th>
+    <th>Designation</th>
+    <th>DOB</th>
+    <th>DOJ</th>
+    <th>Gender</th>
+    <th>Address</th>
+    <th [hidden]="!showSalaryColumn">Salary</th>
+  </thead>
+  <tbody>
+     <tr *ngFor="let emp of  employeeDetails">
+      <td>{{emp.empId}}</td>
+      <td>{{emp.empName}}</td>
+      <td>{{emp.designation}}</td>
+      <td>{{emp.dateOfBirth}}</td>
+      <td>{{emp.dateOfJoining}}</td>
+      <td>{{emp.gender}}</td>
+      <td>{{emp.address}}</td>
+      <td [hidden]="!showSalaryColumn">{{emp.salary}}</td>
+     </tr>
+  </tbody>
+</table>
+<!-- <button type="submit" (click)="showSalary()" style="height: 40px;">{{statusSalary?"Hide":"Show"}}</button> -->
+<button (click)="toggleSalaryColumn()" style="height: 40px;">
+  {{ showSalaryColumn ? 'Hide' : 'Show' }}
+</button>
+</div>
